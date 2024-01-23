@@ -10,6 +10,7 @@ const app = createApp ({
     // USO DATA CON ALL'INTENRO IL RETURN 
     data() {
         return {
+            // DATE ARRAY OGGETTI
             date: arrayExpense,
         }
     }
