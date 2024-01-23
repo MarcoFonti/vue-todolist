@@ -21,7 +21,7 @@
         <!-- CONTENITORE -->
         <div class="container">
             <div class="card mt-4 p-2">
-                <h1 class="text-center text-danger">LISTA DELLA SPESA</h1>
+                <h1 class="text-center text-danger">LISTA DA FARE</h1>
                 <ul class="list-group">
                     <!-- LISTA -->
                     <li v-for="element in date" class="list-group-item"> 
@@ -43,6 +43,8 @@
                     <button class="btn btn-outline-primary" type="button" @click="addProduct"><i class="fa-solid fa-plus"></i></button>
                 </div>
             </div>
+            <!-- TESTO VISIBILE SOLO SE NON CI SONO ELEMENTI -->
+            <h2 class="text-center mt-3" v-show="date.length === 0">LISTA COMPLETATA</h2>
         </div>
     </div>
 </body>
