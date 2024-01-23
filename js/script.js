@@ -15,13 +15,24 @@ const app = createApp ({
         }
     },
 
-   // METODO FUNZIONI
-   methods: {
-    productFound() {
-        
-    }
-},
-})
+    // METODO FUNZIONI PER ELIMINARE
+    methods: {
+        productFound(id) {
+            const newDate = this.date.filter((element) => {
+                if(id !== element.id){
+                    return true;
+                } else {
+                    return false;
+                }
+            })
+
+            this.date = newDate;
+        }
+    },
+
+
+
+});
 
 // COLLEGO ID 
 app.mount('#root');
