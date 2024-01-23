@@ -13,7 +13,14 @@ const app = createApp ({
             // DATE ARRAY OGGETTI
             date: arrayExpense,
         }
+    },
+
+   // METODO FUNZIONI
+   methods: {
+    productFound() {
+        
     }
+},
 })
 
 // COLLEGO ID 

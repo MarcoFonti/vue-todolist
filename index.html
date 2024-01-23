@@ -26,7 +26,7 @@
                     <!-- LISTA -->
                     <li v-for="element in date" class="list-group-item d-flex justify-content-between"> 
                         <span :class="{'text-decoration-line-through': element.done}">{{element.text}}</span>
-                        <span><i class="fa-solid fa-xmark"></i></span>
+                        <i v-on:click="element.done = !element.done" class="fa-solid fa-xmark"></i>
                     </li>
                 </ul>
             </div>
