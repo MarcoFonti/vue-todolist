@@ -1,7 +1,8 @@
 // CHECK 
 console.log('JS DATI OK');
 
-// ARRAY DI OGGETTI
+
+/* CREO ARRAY DI OGGETTI */
 const arrayExpense = 
 [
     { id: 1, done: false, text: 'Fare la spesa' },
